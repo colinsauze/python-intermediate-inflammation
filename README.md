@@ -1,17 +1,21 @@
-# Introduction
+# Inflam
 
-This is a template software project repository used by the [Intermediate Research Software Development Skills In Python](https://github.com/carpentries-incubator/python-intermediate-development).
+Inflam is a data management system written in Python that manages trial data used in clinical inflammation studies.
 
-## Purpose
+## Main Features
 
-This repository is intended to be used as a code template which is copied by learners at [Intermediate Research Software Development Skills In Python](https://github.com/carpentries-incubator/python-intermediate-development) course.
+Here are some of Inflam's main features:
 
-This software project is not finished, does not contain a LICENCE file, the code is currently failing to run and contains some code style issues. 
-It is used as a starting point for the course - issues will be fixed and code will be added in a number of places during the course by learners in their own copies of the repository, as course topics are introduced.
+ - Provide basic stats analysis
+ - Read trial data in CSV format
+ - Generate plots of trial data
+ - Analytical functions and views can be easily extended based on its Model-View-Controller architecture.
 
-## Tests
+## Prerequisites
+Inflam requires the following Python packages:
 
-Several tests have been implemented already, some of which are currently failing.
-These failing tests set out the requirements for the additional code to be implemented during the workshop.
-
-The tests should be run using `pytest`, which will be introduced during the workshop.
+ - [Numpy](https://numpy.org) - make use of numpy's stats functions
+ - [Matplotlib](https://matplotlib.org) - used for graph generation
+Optional packages:
+ - [pytest](https://docs.pytest.org) - Unit tests written in pytest
+ - [pytest-cov](https://pypi.org/project/pytest-cov) - Adds coverage
