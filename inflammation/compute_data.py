@@ -8,6 +8,10 @@ import numpy as np
 from inflammation import models, views
 
 def load_inflammation_data(dir_path):
+    """loads all inflammation*.csv files from dir_path
+    param dir_path: the path to the CSV files
+    returns : a list of 2D numpy arrays containing the data
+    """
     data_file_paths = glob.glob(os.path.join(dir_path, 'inflammation*.csv'))
     if len(data_file_paths) == 0:
         raise ValueError(f"No inflammation CSV files found in path {dir_path}")
